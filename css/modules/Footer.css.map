@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,uHAA+G,CCEvH,eAAgB,CACZ,UAAU,CDCG,OAAO,CCApB,MAAM,CAAE,KAAK",
+"sources": ["../../sass/modules/_vars.scss","../../sass/modules/Footer.scss"],
+"names": [],
+"file": "Footer.css"
+}

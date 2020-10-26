@@ -1,5 +1,6 @@
 @import '_vars.scss';
 @import './Footer.scss';
+@import './Queries.scss';
 
 .navbar {
     height: 70px;
@@ -83,6 +84,11 @@
     line-height: 32px;
 }
 
+#services-section {
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+
 .download {
     background: $digital-blue !important;
     border-radius: 40px !important;
@@ -109,7 +115,6 @@ hr {
 
 #products-section {
     background: $ippolito-green;
-    min-height: 300px;
 }
 
 #product-selection {

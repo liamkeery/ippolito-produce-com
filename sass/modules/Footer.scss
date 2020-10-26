@@ -2,5 +2,95 @@
 
 #contact-prompt {
     background: $ippolito-green;
+}
+
+.contact-btn {
+    background: white !important;
+    border-radius: 40px !important;
+    color: black !important;
+    font-family: $ippolito-body !important;
+    border: none !important;
+    width: 200px;
+}
+
+.footer-con {
     height: 300px;
+    background: white;
+}
+
+.footer-sec {
+    background: $ippolito-purple;
+}
+
+.footer-logo {
+    font-family: $ippolito-brand;
+    color: $ippolito-purple;
+    font-size: 1.5rem;
+}
+
+.footer-logo-text {
+    color: $ippolito-purple;
+    font-family: $ippolito-brand;
+    font-size: 1rem;
+}
+
+h3 {
+    color: $dark-grey;
+    font-size: 1.5rem;
+    font-family: $ippolito-heading;
+}
+
+.hr-small {
+    border: 2px solid $ippolito-green !important;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav {
+    .nav-item a {
+        color: $dark-grey;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item a:hover {
+        color: $dark-grey;
+        text-decoration: underline;
+    }
+}
+
+#contact-info {
+    h4 {
+        font-family: $ippolito-body;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    p {
+        font-family: $ippolito-body;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
+
+.footer-sec {
+    color: white;
+
+    p {
+        color: white;
+        font-family: $ippolito-body;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
 }

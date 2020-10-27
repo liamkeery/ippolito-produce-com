@@ -7,14 +7,13 @@
 .contact-btn {
     background: white !important;
     border-radius: 40px !important;
-    color: black !important;
+    color: $dark-grey !important;
     font-family: $ippolito-body !important;
     border: none !important;
     width: 200px;
 }
 
 .footer-con {
-    height: 300px;
     background: white;
 }
 
@@ -92,5 +91,11 @@ h3 {
     a:hover {
         color: white;
         text-decoration: underline;
+    }
+}
+
+#social-icons {
+    .nav-item, .nav-link {
+        font-size: 1.5rem;
     }
 }

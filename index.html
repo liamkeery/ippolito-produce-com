@@ -1,287 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ippolito Fruit &amp; Produce</title>
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/main.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-            crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row" id="hero">
-                <nav class="navbar navbar-expand-lg col-lg-12">
-                    <a class="navbar-brand" href="#">Ippolito Fruit &amp;
-                        Produce</a>
-                    <button class="navbar-toggler" type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarTogglerDemo02"
-                        aria-controls="navbarTogglerDemo02"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse"
-                        id="navbarTogglerDemo02">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbarDropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    About Us
-                                </a>
-                                <div class="dropdown-menu"
-                                    aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another
-                                        action</a>
-                                    <a class="dropdown-item" href="#">Something
-                                        else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Our Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Our Products</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    data-toggle="dropdown">
-                                    Recipes
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another
-                                        action</a>
-                                    <a class="dropdown-item" href="#">Something
-                                        else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    data-toggle="dropdown">
-                                    Connect
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another
-                                        action</a>
-                                    <a class="dropdown-item" href="#">Something
-                                        else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="col-lg-12 middle-section">
-                    <h1 class="hero-text">Create Your Plate</h1>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ippolito Fruit &amp; Produce</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5a7dc109cc.js" crossorigin="anonymous"></script>
+</head>
 
-                <div class="col-lg-12 bottom-section">
-                    <!-- <img src="/images/logos.svg" class="logos"> -->
-                </div>
-            </div><!-- End Row -->
+<body>
+    <div class="container-fluid">
+        <div class="row" id="hero">
 
-            <div class="row align-items-center" id="alert-section">
-                <div class="col">
-                    <h1 class="alert-text">This is the alert section</h1>
-                </div>
-            </div>
-            <!-- End row -->
+            <nav class="navbar navbar-dark navbar-expand-lg col-lg-12 sticky-top">
+                <a class="navbar-brand" href="#">Ippolito Fruit &amp;
+                    Produce</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="col-lg-12" id="services-section">
-                <div class="col-lg-12">
-                    <h1 class="main-heading">What We Do</h1>
-                    <hr>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another
+                                    action</a>
+                                <a class="dropdown-item" href="#">Something
+                                    else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Recipes
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another
+                                    action</a>
+                                <a class="dropdown-item" href="#">Something
+                                    else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Connect
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another
+                                    action</a>
+                                <a class="dropdown-item" href="#">Something
+                                    else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-end" id="social-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <button type="button" class="btn btn-outline-light ml-3">CAREERS</button>
+                    </ul>
                 </div>
-                <div class="row">
-                        <div class="col-lg-3 card mt-3">
-                            Icon 1
-                        </div>
-                        <div class="col-lg-3 card mt-3">
-                            Icon 2
-                        </div>
-                        <div class="col-lg-3 card mt-3">
-                            Icon 3
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End row -->
+            </nav>
 
-                <div class="col-lg-12 p-5" id="products-section">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            <h1 class="main-heading-alt">Explore The Options</h1>
-                            <form class="product-select-form col-6">
-                                <div class="form-group row justify-content-center">
-                                    <label for="product-select" class="col-form-label mr-2">I'm looking for</label>
-                                    <select class="form-control col-lg-6" id="product-select">
-                                      <option>Organics</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-                                  </div>
-                            </form>
-                        </div>
-                        <div class="col-6">
-                            Two
-                        </div>
-                    </div>
-                </div>
-                <!-- End row -->
-
-                <div class="col-lg-12" id="product-selection">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            One of three columns
-                        </div>
-                        <div class="col-6 text-center">
-                            <h1 class="main-heading-alt mb-3 mt-4">Ippolito
-                                Organics</h1>
-                            <p class="body-copy-alt product-text text-center">Lorem
-                                ipsum, dolor sit amet consectetur adipisicing
-                                elit. Suscipit nihil delectus asperiores
-                                temporibus odio totam dolorum voluptatem
-                                obcaecati, eos incidunt illo. Similique
-                                accusantium quod optio eveniet enim, dolorum a
-                                rem.</p>
-                            <button class="btn btn-primary download mt-2 mb-4
-                                p-3">Download Product Guide</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End row -->
-
-                <div class="col-lg-12">
-                    <h1 class="main-heading">Where We Source</h1>
-                    <hr>
-                </div>
-            </div><!-- End Content Row -->
-
-                <div class="col-lg-12 text-center" id="contact-prompt">
-                    <div class="row align-items-center">
-                    <div class="col p-5">
-                    <h1 class="main-heading-alt">Have a question? <b>Reach out!</b></h1>
-                    <a class="contact-btn btn btn-primary mt-2 mb-4 p-3"
-                        href="#">Contact Us</a>
-                    </div>
-                    </div>
-                </div>
-
-            <footer class="col-lg-12 footer-con">
-                <div class="row">
-                <div class="col mt-4 ml-5">
-                    <h1 class="footer-logo">Ippolito</h1>
-                    <h3 class="footer-logo-text">Fruit &amp; Produce LTD.</h3>
-                    <p>201 North Service Rd.<br>Burlington, ON<br>Canada, L7P 5C4</p>
-                </div>
-                <div class="col mt-4">
-                    <h3>Products &amp; Services</h3>
-                    <hr class="hr-small">
-                    <ul class="nav flex-column footer-nav">
-                        <li class="nav-item mt-4">
-                          <a class="nav-link" href="#">Our Products</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">Where To Buy</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">Where We Grow</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">What We Do</a>
-                        </li>
-                      </ul>
-                </div>
-                <div class="col mt-4">
-                    <h3>About Us</h3>
-                    <hr class="hr-small">
-                    <ul class="nav flex-column footer-nav">
-                        <li class="nav-item mt-4">
-                          <a class="nav-link" href="#">Meet Our Team</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">Our Facilities</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">Employee Safety</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">Food Safety</a>
-                        </li>
-                      </ul>
-                </div>
-                <div class="col mt-4">
-                    <h3>Explore The Options</h3>
-                    <hr class="hr-small">
-                    <ul class="nav flex-column footer-nav">
-                        <li class="nav-item mt-4">
-                          <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">Recipes</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">Nutrition Newsletter</a>
-                        </li>
-                      </ul>
-                </div>
-                <div class="col mt-4" id="contact-info">
-                    <h3>Contact Us</h3>
-                    <hr class="hr-small">
-                    <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a><br><b>Fax:</b> <a href="tel:9056399751">(905) 639-9751</a></p>
-                    <h4>Customer Service:</h4>
-                    <p><a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
-                    <h4>Business Sales:</h4>
-                    <p><a href="mailto:info@ippolito.biz">info@ippolito.biz</a></p>
-                </div>
-            </div>
-            </footer>
-            
-            <div class="col-lg-12 footer-sec pt-3 pb-3">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <p>Copyright &copy; 2020 Ippolito Fruit &amp; Produce LTD.</p>
-                    </div>
-                    <div class="col text-center">
-                        <a href="#" class="mr-2">Privacy Policy</a>
-                    |
-                        <a href="#" class="ml-2">The Ippolito Group</a>
-                    </div>
-                    <div class="col">
-                        Social Links
-                    </div>
-                </div>
+            <div class="col-lg-12 middle-section">
+                <h1 class="hero-text">Create Your Plate</h1>
             </div>
 
-        </div><!-- End Container -->
-        <!-- Bootstrap Scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-        <!-- Main JS -->
-        <script src='js/main.js' type="module"></script>
-    </body>
+            <div class="col-lg-12 bottom-section">
+                <img src="/images/logos.svg" class="logos img-fluid">
+            </div>
+        </div><!-- End Row -->
+
+        <div class="row align-items-center" id="alert-section">
+            <div class="col">
+                <h1 class="alert-text">This is the alert section</h1>
+            </div>
+        </div>
+        <!-- End row -->
+
+        <div class="col-lg-12" id="services-section">
+            <div class="col-lg-12">
+                <h1 class="main-heading">What We Do</h1>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 card mt-3 text-center">
+                    <img src="images/box.svg" alt="" class="m-auto">
+                </div>
+                <div class="col-lg-3 card mt-3 text-center">
+                    <img src="images/shipping.svg" alt="" class="m-auto">
+                </div>
+                <div class="col-lg-3 card mt-3 text-center">
+                    <img src="images/specialty.svg" alt="" class="m-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End row -->
+
+    <div class="col-lg-12 p-5 mt-4" id="products-section">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h1 class="main-heading-alt mb-3">Explore The Options</h1>
+                <form class="product-select-form col-6">
+                    <div class="form-group row justify-content-center">
+                        <label for="product-select" class="col-form-label mr-2">I'm looking for</label>
+                        <select class="form-control col-lg-6" id="product-select">
+                            <option>Organics</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <img src="images/salad.png" alt="" class="choose-img img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- End row -->
+
+    <div class="col-lg-12" id="product-selection">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/organics.png" alt="" class="product-img img-fluid">
+            </div>
+            <div class="col-6 text-center pt-5">
+                <h1 class="main-heading-alt mb-3 mt-4">Ippolito
+                    Organics</h1>
+                <p class="body-copy-alt product-text text-center">Lorem
+                    ipsum, dolor sit amet consectetur adipisicing
+                    elit. Suscipit nihil delectus asperiores
+                    temporibus odio totam dolorum voluptatem
+                    obcaecati, eos incidunt illo. Similique
+                    accusantium quod optio eveniet enim, dolorum a
+                    rem.</p>
+                <button class="btn btn-primary download mt-2 mb-4 p-3">Download Product Guide</button>
+            </div>
+        </div>
+    </div>
+    <!-- End row -->
+    <div class="col-lg-12" id="sourcing">
+        <h1 class="main-heading mt-4">Where We Source</h1>
+        <hr>
+        <p style="font-size: 0.5rem; text-align: center; margin: 0 auto;"><b>*</b>Not pictured below: Mexico</p>
+        <div class="row">
+        <div id="us-map" style="width: 500px; height: 300px" class="col-lg-6 mt-4 mb-4"></div>
+        <div id="canada-map" style="width: 500px; height: 300px" class="col-lg-6 mt-4 mb-4"></div>
+        </div>
+    </div>
+    </div><!-- End Content Row -->
+
+    <div class="col-lg-12 text-center" id="contact-prompt">
+        <div class="row align-items-center">
+            <div class="col p-5">
+                <h1 class="main-heading-alt">Have a question? <b>Reach out!</b></h1>
+                <a class="contact-btn btn btn-primary mt-2 mb-4 p-3 hvr-pulse-grow" href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="col-lg-12 footer-con">
+        <div class="row">
+            <div class="col mt-4 ml-5">
+                <h1 class="footer-logo">Ippolito</h1>
+                <h3 class="footer-logo-text">Fruit &amp; Produce LTD.</h3>
+                <p>201 North Service Rd.<br>Burlington, ON, Canada<br>L7P 5C4</p>
+            </div>
+            <div class="col mt-4">
+                <h3>Products &amp; Services</h3>
+                <hr class="hr-small">
+                <ul class="nav flex-column footer-nav">
+                    <li class="nav-item mt-4">
+                        <a class="nav-link" href="#">Our Products</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Where To Buy</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Where We Grow</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">What We Do</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col mt-4">
+                <h3>About Us</h3>
+                <hr class="hr-small">
+                <ul class="nav flex-column footer-nav">
+                    <li class="nav-item mt-4">
+                        <a class="nav-link" href="#">Meet Our Team</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Our Facilities</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Employee Safety</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Food Safety</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col mt-4">
+                <h3>Explore The Options</h3>
+                <hr class="hr-small">
+                <ul class="nav flex-column footer-nav">
+                    <li class="nav-item mt-4">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="#">Nutrition Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col mt-4" id="contact-info">
+                <h3>Contact Us</h3>
+                <hr class="hr-small">
+                <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a><br><b>Fax:</b> <a
+                        href="tel:9056399751">(905) 639-9751</a></p>
+                <h4>Customer Service:</h4>
+                <p><a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
+                <h4>Business Sales:</h4>
+                <p><a href="mailto:info@ippolito.biz">info@ippolito.biz</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="col-lg-12 footer-sec pt-3 pb-3">
+        <div class="row align-items-center">
+            <div class="col">
+                <p>Copyright &copy; 2020 Ippolito Fruit &amp; Produce LTD.</p>
+            </div>
+            <div class="col text-center">
+                <a href="#" class="mr-2">Privacy Policy</a>
+                |
+                <a href="#" class="ml-2">The Ippolito Group</a>
+            </div>
+            <div class="col">
+                <ul class="nav justify-content-end" id="social-icons">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div><!-- End Container -->
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- JVectorMap -->
+    <script src="js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="js/jquery-jvectormap-us-aea.js"></script>
+    <script src="js/jquery-jvectormap-ca-lcc.js"></script>
+    <!-- Main JS -->
+    <script src='js/main.js' type="module"></script>
+
+    <script>
+        $(function () {
+            $('#us-map').vectorMap(
+                {
+                    map: 'us_aea',
+                    backgroundColor: 'transparent',
+                    regionStyle: {
+                        initial: {
+                            fill: '#4E2564',
+                            "fill-opacity": 1,
+                            stroke: 'none',
+                            "stroke-width": 0,
+                            "stroke-opacity": 1
+                        },
+                        hover: {
+                            "fill-opacity": 0.8,
+                            cursor: 'pointer'
+                        },
+                        selected: {
+                            fill: '#F18A20'
+                        },
+                        selectedHover: {
+                        }
+                    },
+                    regionLabelStyle: {
+                        initial: {
+                            'font-family': 'Verdana',
+                            'font-size': '12',
+                            'font-weight': 'bold',
+                            cursor: 'default',
+                            fill: 'white'
+                        },
+                        hover: {
+                            cursor: 'pointer'
+                        }
+                    },
+                    selectedRegions: {
+                        "US-NJ": '#F18A20',
+                        "US-NV": '#F18A20',
+                        "US-TX": '#F18A20',
+                        "US-FL": '#F18A20',
+                        "US-CA": '#F18A20',
+                        "US-AZ": '#F18A20'
+                    },
+                    zoomOnScroll: false
+
+                });
+
+                $('#canada-map').vectorMap(
+                {
+                    map: 'ca_lcc',
+                    backgroundColor: 'transparent',
+                    regionStyle: {
+                        initial: {
+                            fill: '#4E2564',
+                            "fill-opacity": 1,
+                            stroke: 'none',
+                            "stroke-width": 0,
+                            "stroke-opacity": 1
+                        },
+                        hover: {
+                            "fill-opacity": 0.8,
+                            cursor: 'pointer'
+                        },
+                        selected: {
+                            fill: '#F18A20'
+                        },
+                        selectedHover: {
+                        }
+                    },
+                    regionLabelStyle: {
+                        initial: {
+                            'font-family': 'Verdana',
+                            'font-size': '12',
+                            'font-weight': 'bold',
+                            cursor: 'default',
+                            fill: 'white'
+                        },
+                        hover: {
+                            cursor: 'pointer'
+                        }
+                    },
+                    selectedRegions: {
+                        "CA-ON": '#F18A20',
+                        "CA-QC": '#F18A20'
+                    },
+                    zoomOnScroll: false
+
+                });
+        });
+    </script>
+</body>
+
 </html>

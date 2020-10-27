@@ -115,12 +115,39 @@ hr {
 
 #products-section {
     background: $ippolito-green;
+    color: white;
+    overflow: visible;
+    position: relative;
 }
 
 #product-selection {
     background: $ippolito-orange;
+    overflow: visible;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .product-select-form {
     margin: 0 auto;
+}
+
+.product-img {
+    width: 230px;
+    position: absolute;
+    top: -25px;
+    margin-left: 220px;
+}
+
+.choose-img {
+    width: 450px;
+    position: absolute;
+    top: -150px;
+    z-index: 1;
+}
+
+#sourcing {
+    height: 100vh;
+    background: url('/images/grow-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
 }

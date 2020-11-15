@@ -18,9 +18,13 @@
 
 <body>
     <div class="container-fluid">
+        <div class="row align-items-center" id="top-alert">
+            <div class="col">
+                <p class="pt-1"><b>We are hiring!</b> Visit our <a href="#">careers page</a> to view open opportunities.</p>
+            </div>
+        </div>
         <div class="row" id="hero">
-
-            <nav class="navbar navbar-dark navbar-expand-lg col-lg-12 sticky-top">
+            <nav class="navbar navbar-dark navbar-expand-lg col-lg-12">
                 <a class="navbar-brand" href="#">Ippolito Fruit &amp;
                     Produce</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -96,17 +100,18 @@
             </nav>
 
             <div class="col-lg-12 middle-section">
-                <h1 class="hero-text">Create Your Plate</h1>
+                
             </div>
 
-            <div class="col-lg-12 bottom-section">
+            <div class="col-lg-6 bottom-section ml-4">      
+                <h1 class="hero-text">Create Your Plate.</h1>
                 <img src="/images/logos.svg" class="logos img-fluid">
             </div>
         </div><!-- End Row -->
 
         <div class="row align-items-center" id="alert-section">
             <div class="col">
-                <h1 class="alert-text">This is the alert section</h1>
+                <h1 class="alert-text">Healthy Eating Made Easy.</h1>
             </div>
         </div>
         <!-- End row -->
@@ -120,7 +125,7 @@
                 <div class="col-lg-3 card mt-3 text-center">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="images/box.svg" alt="" class="m-auto" style="padding: 100px;">
+                            <img src="images/tomato.jpg" alt="" class="m-auto pt-4" style="max-width: 300px;">
                         </div>
                         <div class="card-back">
                             <h3 class="card-heading">Service 1</h3>
@@ -132,7 +137,7 @@
                 <div class="col-lg-3 card mt-3 text-center">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="images/shipping.svg" alt="" class="m-auto" style="padding: 70px;">
+                            <img src="images/brussel-sprouts.png" alt="" class="m-auto pt-4" style="max-width: 200px;">
                         </div>
                         <div class="card-back">
                             <h3 class="card-heading">Service 2</h3>
@@ -145,7 +150,7 @@
                 <div class="col-lg-3 card mt-3 text-center">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="images/specialty.svg" alt="" class="m-auto" style="padding: 90px;">
+                            <img src="images/leaf-2.png" alt="" class="m-auto pt-5" style="max-width: 250px;">
                         </div>
                         <div class="card-back">
                             <h3 class="card-heading">Service 3</h3>
@@ -161,22 +166,20 @@
 
     <div class="col-lg-12 p-5 mt-4" id="products-section">
         <div class="row align-items-center">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <h1 class="main-heading-alt mb-3">Explore The Options</h1>
                 <form class="product-select-form col-6">
                     <div class="form-group row justify-content-center">
                         <label for="product-select" class="col-form-label mr-2">I'm looking for</label>
                         <select class="form-control col-lg-6" id="product-select">
                             <option>Organics</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>Product 2</option>
+                            <option>Product 3</option>
                         </select>
                     </div>
                 </form>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6 d-none d-md-block">
                 <img src="images/salad.png" alt="" class="choose-img img-fluid">
             </div>
         </div>
@@ -185,10 +188,10 @@
 
     <div class="col-lg-12" id="product-selection">
         <div class="row">
-            <div class="col-4">
+            <div class="col-sm-6 d-none d-md-block">
                 <img src="images/organics.png" alt="" class="product-img img-fluid">
             </div>
-            <div class="col-6 text-center pt-5">
+            <div class="col-sm-6 text-center pt-5 pb-2">
                 <h1 class="main-heading-alt mb-3 mt-4">Ippolito
                     Organics</h1>
                 <p class="body-copy-alt product-text text-center">Lorem
@@ -208,8 +211,8 @@
         <hr>
         <p style="font-size: 0.5rem; text-align: center; margin: 0 auto;"><b>*</b>Not pictured below: Mexico</p>
         <div class="row">
-        <div id="us-map" style="width: 500px; height: 300px" class="col-lg-6 mt-4 mb-4"></div>
-        <div id="canada-map" style="width: 500px; height: 300px" class="col-lg-6 mt-4 mb-4"></div>
+        <div id="us-map" style="min-width: 500px; height: 300px" class="col-lg-6 mt-4 mb-4"></div>
+        <div id="canada-map" style="min-width: 500px; height: 300px" class="col-lg-6 mt-4 mb-4"></div>
         </div>
     </div>
     </div><!-- End Content Row -->
@@ -225,12 +228,12 @@
 
     <footer class="col-lg-12 footer-con">
         <div class="row">
-            <div class="col mt-4 ml-5">
+            <div class="col-sm mt-4 ml-5">
                 <h1 class="footer-logo">Ippolito</h1>
                 <h3 class="footer-logo-text">Fruit &amp; Produce LTD.</h3>
                 <p>201 North Service Rd.<br>Burlington, ON, Canada<br>L7P 5C4</p>
             </div>
-            <div class="col mt-4">
+            <div class="col-sm mt-4">
                 <h3>Products &amp; Services</h3>
                 <hr class="hr-small">
                 <ul class="nav flex-column footer-nav">
@@ -248,7 +251,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col mt-4">
+            <div class="col-sm mt-4">
                 <h3>About Us</h3>
                 <hr class="hr-small">
                 <ul class="nav flex-column footer-nav">
@@ -266,7 +269,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col mt-4">
+            <div class="col-sm mt-4">
                 <h3>Explore The Options</h3>
                 <hr class="hr-small">
                 <ul class="nav flex-column footer-nav">
@@ -281,7 +284,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col mt-4" id="contact-info">
+            <div class="col-sm mt-4" id="contact-info">
                 <h3>Contact Us</h3>
                 <hr class="hr-small">
                 <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a><br><b>Fax:</b> <a
@@ -296,15 +299,15 @@
 
     <div class="col-lg-12 footer-sec pt-3 pb-3">
         <div class="row align-items-center">
-            <div class="col">
+            <div class="col-sm">
                 <p>Copyright &copy; 2020 Ippolito Fruit &amp; Produce LTD.</p>
             </div>
-            <div class="col text-center">
+            <div class="col-sm text-center">
                 <a href="#" class="mr-2">Privacy Policy</a>
                 |
                 <a href="#" class="ml-2">The Ippolito Group</a>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <ul class="nav justify-content-end" id="social-icons">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>

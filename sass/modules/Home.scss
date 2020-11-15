@@ -2,6 +2,14 @@
 @import './Footer.scss';
 @import './Queries.scss';
 
+#top-alert {
+    height: 50px;
+    background: $digital-blue;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
 .navbar {
     height: 70px;
     background: $ippolito-purple;
@@ -12,6 +20,10 @@
     font-family: $ippolito-body;
     text-transform: uppercase;
     font-size: 0.875rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
 }
 
 .navbar-brand {
@@ -29,7 +41,7 @@
 }
 
 #hero {
-    height: 100vh;
+    height: calc(100vh - 50px);
     background: url('/images/hero-background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -40,12 +52,11 @@
     font-weight: 700;
     color: white;
     font-size: 5rem;
-    text-align: center;
 }
 
 .logos {
     display: block;
-    margin: 0 auto;
+    max-width: 400px !important;
 }
 
 #alert-section {
@@ -147,7 +158,7 @@ hr {
 }
 
 #sourcing {
-    height: 100vh;
+    min-height: 100vh;
     background: url('/images/grow-bg.png') no-repeat;
     background-size: cover;
     background-position: center;

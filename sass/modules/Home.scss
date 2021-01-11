@@ -18,8 +18,7 @@
 .nav-item a, .nav-item a:hover {
     color: $white;
     font-family: $ippolito-body;
-    text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -41,7 +40,7 @@
 }
 
 #hero {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 130px);
     background: url('/images/hero-background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,11 +51,12 @@
     font-weight: 700;
     color: white;
     font-size: 5rem;
+    margin-right: 32px;
+    margin-bottom: 250px;
 }
 
 .logos {
     display: block;
-    max-width: 350px !important;
 }
 
 #alert-section {
@@ -201,10 +201,10 @@ hr {
 
   .card-body {
       font-family: $ippolito-body;
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 24px;
-      padding: 16px;
       color: $dark-grey;
+      text-align: left;
   }
 
   .card-hr {

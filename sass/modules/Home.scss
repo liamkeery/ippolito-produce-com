@@ -25,6 +25,10 @@
     color: white !important;
 }
 
+.product-text {
+    text-align: left;
+}
+
 .navbar-brand {
     color: $white;
     font-family: $ippolito-brand;
@@ -40,7 +44,7 @@
 }
 
 #hero {
-    height: calc(100vh - 130px);
+    height: 100vh;
     background: url('/images/hero-background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,7 +56,16 @@
     color: white;
     font-size: 5rem;
     margin-right: 32px;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
+}
+
+.scroll-toggle {
+    color: white;
+    font-size: 2rem;
+}
+
+.scroll-toggle:hover {
+    color: $ippolito-purple;
 }
 
 .logos {
@@ -145,9 +158,10 @@ hr {
 
 .product-img {
     width: 230px;
-    position: absolute;
-    top: -25px;
-    margin-left: 220px;
+    // position: absolute;
+    // top: -25px;
+    // margin-left: 220px;
+    margin: 0 auto;
 }
 
 .choose-img {

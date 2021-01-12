@@ -3,3 +3,7 @@
 @import 'modules/Connect.scss';
 @import 'modules/About.scss';
 @import 'modules/Recipes.scss';
+
+html {
+    scroll-behavior: smooth;
+}

@@ -7,3 +7,20 @@
 html {
     scroll-behavior: smooth;
 }
+
+.scroll-con {
+    overflow-y: scroll;
+}
+
+.scroll-con::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+.scroll-con::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+
+

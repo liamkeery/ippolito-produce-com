@@ -42,6 +42,82 @@
     #social-icons {
         justify-content: center !important;
     }
+
+    .logos {
+        width: 290px !important;
+        margin-left: 16px;
+    }
+
+    #hero {
+        height: auto;
+    }
+
+    .hiring-box {
+        float: none !important;
+        margin-bottom: 16px;
+        width: 280px;
+    }
+
+    .hero-text {
+        margin-top: 32px;
+        float: none;
+        font-size: 2.5rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    #footer-logo {
+        margin-left: 0 !important;
+    }
+}
+
+// Menu breakpoint
+@media (max-width: 1200px) {
+    .hiring-box {
+        float: none;
+    }
+}
+
+// iPad
+@media (max-width: 768px) {
+    .hiring-box {
+        width: 300px;
+    }
+}
+
+// iPad Pro
+@media (max-width: 1024px) {
+    .hiring-box {
+        margin-left: 16px;
+        width: 300px;
+        margin-bottom: 32px;
+    }
+
+    #hero {
+        height: auto;
+    }
+}
+
+// Medium devices
+@media (max-width: 991.98px) { 
+    #hero {
+        height: auto;
+    }
+
+    .hero-text {
+        padding-top: 16px;
+    }
+
+    .hiring-box {
+        width: 280px;
+        margin-bottom: 32px;
+    }
+
+    .logos {
+        width: 500px;
+    }
 }
 
 // Small

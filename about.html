@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/hover.css">
         <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,11 +17,13 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/5a7dc109cc.js"
             crossorigin="anonymous"></script>
+        <!-- Animate on Scroll -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row" id="half-hero" style="margin-bottom: 0;">
-                <nav class="navbar navbar-dark navbar-expand-lg col-lg-12">
+                <nav class="navbar navbar-dark navbar-expand-xl col-lg-12">
                     <a class="navbar-brand" href="index.html">Ippolito Fruit &amp;
                         Produce Ltd.</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -37,14 +40,17 @@
                                 <a class="nav-link" href="index.html#services-section">What We Do</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#products-section">Products & Services</a>
+                                <a class="nav-link" href="index.html#products-section">Explore The Options</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     About Us
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="dropdown-menu" aria- labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="about.html">What We Value</a>
                                     <a class="dropdown-item" href="about.html#food-safety">Food Safety</a>
                                     <a class="dropdown-item" href="about.html#employee-safety">Employee Safety</a>
@@ -56,7 +62,7 @@
                                     <a class="dropdown-item" href="#">Associations/Certifications</a>
                                     
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                                     Create Your Plate
@@ -90,7 +96,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="https://twitter.com/IppolitoGroup"><i class="fab fa-twitter-square"></i></a>
                             </li>
-                            <a href="https://www.ippolitogroup.com/careers.php"><button type="button" class="btn btn-outline-light ml-3 mt-1">CAREERS</button></a>
+                            <!-- <a href="https://www.ippolitogroup.com/careers.php"><button type="button" class="btn btn-outline-light ml-3 mt-1">CAREERS</button></a> -->
                         </ul>
                     </div>
                 </nav>
@@ -114,7 +120,7 @@
                     facere dicta dolorem id aliquid et neque corporis unde.</p>
             </div>
 
-            <div class="row" style="margin-bottom: 60px;" id="food-safety">
+            <!-- <div class="row" style="margin-bottom: 60px;" id="food-safety">
                 <div class="block-container col-lg-8 m-auto">
                     <div class="col-lg-6 text-box text-center">
                         <h2 class="main-heading-alt">Food Safety</h2>
@@ -132,9 +138,8 @@
                     <div class="col-lg-6">
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
                 <div class="block-container-alt col-lg-8 m-auto"
                     id="employee-safety">
                     <div class="col-lg-6 text-box float-right text-center">
@@ -152,10 +157,127 @@
                     <div class="col-lg-6">
                     </div>
                 </div>
+            </div> -->
+            <div class="row m-auto">
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/value.jpg"
+                            alt="What We Value">
+                        <div class="card-body">
+                            <h5 class="card-title">What We Value</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="values.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/green-house.jpg"
+                            alt="Food Safety">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Safety</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="food-safety.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/field.jpg"
+                            alt="Employee Safety">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee Safety</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="employee-safety.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/grow-bg.png"
+                            alt="Sustainability">
+                        <div class="card-body">
+                            <h5 class="card-title">Sustainability</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="sustainability.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-auto" style="margin-top: 60px !important;">
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/history.jpg"
+                            alt="Our Story">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Story</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="story.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/community.jpg"
+                            alt="Our Community">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Community</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="community.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/processing-4.jpg"
+                            alt="Our Facilities">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Facilities</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="facilities.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                        <img class="card-img-top" src="/images/giving.jpg"
+                            alt="Associations/Certifications">
+                        <div class="card-body">
+                            <h5 class="card-title">Associations/Certifications</h5>
+                            <p class="card-text">With supporting text below as a
+                                natural lead-in to additional content.</p>
+                            <a href="associations.html" class="about-link hvr-icon-forward">Learn
+                                More <i class="fas fa-long-arrow-alt-right
+                                    hvr-icon pt-2"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-            <div class="row align-items-center" id="team" style="margin-top:
+            <div class="row" id="team" style="margin-top:
                 60px;">
                 <div class="col">
                     <h1 class="main-heading ml-auto mr-auto pb-4">Meet Our Team</h1>
@@ -165,121 +287,89 @@
             <div class="row" id="team-con">
                 <div class="col-lg-12">
 
-                    <div class="col-lg-4 m-auto">
+                    <!-- <div class="col-lg-4 m-auto">
                         <div class="team-img rounded-circle m-auto"></div>
-                        <h5 class="title">Owner</h4>
-                        <h4 class="name">Lorem Ipsum</h5>
-                        <p class="body-copy-about">Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Voluptatibus
-                            architecto dolorem unde dolores sapiente repudiandae
-                            inventore vel dignissimos, delectus illo blanditiis,
-                            veniam suscipit, quas pariatur! Reprehenderit at nam
-                            sapiente deleniti!</p>
-                    </div>
-
+                        <h5 class="title">CEO/Owner</h4>
+                        <h4 class="name">Joel Ippolito</h5>
+                        <p class="body-copy-about">
+                            </p>
+                    </div> -->
                     <div class="row team-row">
-                        <div class="col-lg-4 m-auto">
+                        <div class="col-lg-4 m-auto" data-aos="zoom-in-right">
+                            <div class="team-img rounded-circle m-auto"></div>
+                            <h5 class="title">Owner/CEO</h4>
+                            <h4 class="name">Joel Ippolito</h5>
+                            <p class="body-copy-about">
+                                Joel Ippolito is CEO and Owner. He joined the
+                                family business in 1974. Joel has been in the
+                                produce business all his life, and in addition
+                                to Ippolito Fruit & Produce, he owns and is CEO
+                                of Ippolito Transportation Inc., and has an
+                                ownership interest in Ippolito International,
+                                Queen Victoria Farms and Ippolito Produce (Food
+                                Terminal).
+                                <br>
+                                <br>
+                                Joel is Past Board member of Canadian Produce
+                                Marketing Association (CPMA) and Past President
+                                of the Hamilton Golf and Country Club (HGCC). In
+                                2019, Joel was the Burlington Chamber of
+                                Commerce Distinguished Entrepreneur winner.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 m-auto" data-aos="zoom-in-left">
                             <div class="team-img rounded-circle m-auto"></div>
                             <h5 class="title">President</h4>
-                            <h4 class="name">Lorem Ipsum</h5>
-                            <p class="body-copy-about">Lorem ipsum dolor sit
-                                amet
-                                consectetur, adipisicing elit. Voluptatibus
-                                architecto dolorem unde dolores sapiente
-                                repudiandae
-                                inventore vel dignissimos, delectus illo
-                                blanditiis,
-                                veniam suscipit, quas pariatur! Reprehenderit at
-                                nam
-                                sapiente deleniti!</p>
-                        </div>
-                        <div class="col-lg-4 m-auto">
-                            <div class="team-img rounded-circle m-auto"></div>
-                            <h5 class="title">CEO</h4>
-                            <h4 class="name">Lorem Ipsum</h5>
-                            <p class="body-copy-about">Lorem ipsum dolor sit
-                                amet
-                                consectetur, adipisicing elit. Voluptatibus
-                                architecto dolorem unde dolores sapiente
-                                repudiandae
-                                inventore vel dignissimos, delectus illo
-                                blanditiis,
-                                veniam suscipit, quas pariatur! Reprehenderit at
-                                nam
-                                sapiente deleniti!</p>
+                            <h4 class="name">Paul Keery</h5>
+                            <p class="body-copy-about">
+                                Paul Keery joined Ippolito Fruit & Produce in
+                                2018 as President. He is also President of
+                                Ippolito Transportation Inc. Paul is a seasoned
+                                executive with thirty years of experience in the
+                                transportation, logistics, and food sectors.
+                                Paul currently serves as Chairman of the Board
+                                of Directors for Food for Life.
+                            </p>
                         </div>
                     </div>
 
                     <div class="row team-row">
-                        <div class="col-lg-4 m-auto">
+                        <div class="col-lg-4 m-auto" data-aos="zoom-in-right">
                             <div class="team-img rounded-circle m-auto"></div>
                             <h5 class="title">CFO</h4>
-                            <h4 class="name">Lorem Ipsum</h5>
-                            <p class="body-copy-about">Lorem ipsum dolor sit
-                                amet
-                                consectetur, adipisicing elit. Voluptatibus
-                                architecto dolorem unde dolores sapiente
-                                repudiandae
-                                inventore vel dignissimos, delectus illo
-                                blanditiis,
-                                veniam suscipit, quas pariatur! Reprehenderit at
-                                nam
-                                sapiente deleniti!</p>
+                            <h4 class="name">Renaldo Barca</h5>
+                            <p class="body-copy-about">Renaldo Barca is CFO and joined the company in 2018. He has over 20 years of diversified Finance and business experience earned in the Logistics and Transportation sectors, and most recently, the Retail and Foodservice sectors. Ren is active with various industry and professional associations.</p>
                         </div>
-                        <div class="col-lg-4 m-auto">
+                        <div class="col-lg-4 m-auto" data-aos="zoom-in-left">
                             <div class="team-img rounded-circle m-auto"></div>
-                            <h5 class="title">VP, Transportation</h4>
-                            <h4 class="name">Lorem Ipsum</h5>
-                            <p class="body-copy-about">Lorem ipsum dolor sit
-                                amet
-                                consectetur, adipisicing elit. Voluptatibus
-                                architecto dolorem unde dolores sapiente
-                                repudiandae
-                                inventore vel dignissimos, delectus illo
-                                blanditiis,
-                                veniam suscipit, quas pariatur! Reprehenderit at
-                                nam
-                                sapiente deleniti!</p>
+                            <h5 class="title">COO</h4>
+                            <h4 class="name">Steve Dimen</h5>
+                            <p class="body-copy-about">Steve Dimen has been with Ippolito since 2005 and has held numerous progressively senior positions in Purchasing, Operations, Sales and Product Development. He is currently Chief Operating Officer responsible for Operations, Sales & Marketing and Procurement. Steve currently serves as Vice Chair on the Ontario Produce and Marketing Association.
+                                </p>
                         </div>
                     </div>
 
-                    <div class="row team-row">
-                        <div class="col-lg-4 m-auto">
+                    <div class="row team-row pb-5">
+                        <div class="col-lg-4 m-auto" data-aos="zoom-in-right">
                             <div class="team-img rounded-circle m-auto"></div>
                             <h5 class="title">Director, Information Technology</h4>
-                            <h4 class="name">Lorem Ipsum</h5>
-                            <p class="body-copy-about">Lorem ipsum dolor sit
-                                amet
-                                consectetur, adipisicing elit. Voluptatibus
-                                architecto dolorem unde dolores sapiente
-                                repudiandae
-                                inventore vel dignissimos, delectus illo
-                                blanditiis,
-                                veniam suscipit, quas pariatur! Reprehenderit at
-                                nam
-                                sapiente deleniti!</p>
+                            <h4 class="name">Derrick Shanahan</h5>
+                            <p class="body-copy-about">Derrick Shanahan joined Ippolito in 2019 as Director, Information Technology and is the Head of Ippolito’s Technology (IT), Digital and Project Management Office (PMO) disciplines and brings with him a wealth of experience with over 20 years IT and Digital experience in a variety of industries and locations. Derrick is a former President of the Board of Directors for the Royal Canadian Curling Club.
+                                </p>
                         </div>
-                        <div class="col-lg-4 m-auto">
+                        <div class="col-lg-4 m-auto" data-aos="zoom-in-left">
                             <div class="team-img rounded-circle m-auto"></div>
                             <h5 class="title">Director, Human Resources</h4>
-                            <h4 class="name">Lorem Ipsum</h5>
-                            <p class="body-copy-about">Lorem ipsum dolor sit
-                                amet
-                                consectetur, adipisicing elit. Voluptatibus
-                                architecto dolorem unde dolores sapiente
-                                repudiandae
-                                inventore vel dignissimos, delectus illo
-                                blanditiis,
-                                veniam suscipit, quas pariatur! Reprehenderit at
-                                nam
-                                sapiente deleniti!</p>
+                            <h4 class="name">Lindsay Stopps</h5>
+                            <p class="body-copy-about">Lindsay Stopps joined Ippolito as Director, Human Resources in 2019. Lindsay has an extensive background as a HR professional, having worked with several major brands in the food and hospitality sectors. Lindsay is actively involved in Women in Leadership, Children’s Aid Society, Dundas Valley Residents Association and Dundas Builds.
+                                </p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div id="facilities">
+            <!-- <div id="facilities">
                 <h1 class="main-heading ml-auto mr-auto">Our Facilities</h1>
                 <div class="row align-items-center">
                     <div class="col-lg-6 image-con">
@@ -349,13 +439,12 @@
                             community.
                         </p>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
 
         </div><!-- Container end -->
 
-        <div class="col-lg-12 text-center" id="contact-prompt"
-            style="margin-top: 80px;">
+        <div class="col-lg-12 text-center" id="contact-prompt">
             <div class="row align-items-center">
                 <div class="col p-5">
                     <h1 class="main-heading-alt">Have a question? <b>Reach out!</b></h1>
@@ -370,20 +459,25 @@
                 <div class="col-sm mt-4 ml-5">
                     <h1 class="footer-logo">Ippolito</h1>
                     <h3 class="footer-logo-text">Fruit &amp; Produce Ltd.</h3>
-                    <p>201 North Service Rd.<br>Burlington, ON, Canada<br>L7P 5C4</p>
+                    <p>201 North Service Rd.<br>Burlington, ON, Canada<br>L7P
+                        5C4</p>
                 </div>
                 <div class="col-sm mt-4">
                     <h3>Products &amp; Services</h3>
                     <hr class="hr-small">
                     <ul class="nav flex-column footer-nav">
                         <li class="nav-item mt-4">
-                            <a class="nav-link" href="index.html#services-section">What We Do</a>
+                            <a class="nav-link"
+                                href="index.html#services-section">What We Do</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="index.html#products-section">Products & Services</a>
+                            <a class="nav-link"
+                                href="index.html#products-section">Products &
+                                Services</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="index.html#sourcing">Where We Source</a>
+                            <a class="nav-link" href="index.html#sourcing">Where
+                                We Source</a>
                         </li>
                     </ul>
                 </div>
@@ -395,25 +489,25 @@
                             <a class="nav-link" href="about.html">What We Value</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="about.html#food-safety">Food Safety</a>
+                            <a class="nav-link" href="food-safety.html">Food Safety</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="about.html#employee-safety">Employee Safety</a>
+                            <a class="nav-link" href="employee-safety.html">Employee Safety</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">Sustainability</a>
+                            <a class="nav-link" href="sustainability.html">Sustainability</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="about.html#history">Our Story</a>
+                            <a class="nav-link" href="story.html">Our Story</a>
                         </li>
                         <li class="nav-item mt-3">
                             <a class="nav-link" href="about.html#team">Our Leadership Team</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">Our Community</a>
+                            <a class="nav-link" href="community.html">Our Community</a>
                         </li>
                         <li class="nav-item mt-3 mb-4">
-                            <a class="nav-link" href="#">Associations/Certifications</a>
+                            <a class="nav-link" href="associations.html">Associations/Certifications</a>
                         </li>
                     </ul>
                 </div>
@@ -422,7 +516,8 @@
                     <hr class="hr-small">
                     <ul class="nav flex-column footer-nav">
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="recipes.html">Create Your Plate</a>
+                            <a class="nav-link" href="recipes.html">Create Your
+                                Plate</a>
                         </li>
                         <li class="nav-item mt-3">
                             <a class="nav-link" href="#">Nutrition Newsletter</a>
@@ -432,7 +527,8 @@
                 <div class="col-sm mt-4" id="contact-info">
                     <h3>Contact Us</h3>
                     <hr class="hr-small">
-                    <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a></p>
+                    <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905)
+                            631-7700</a></p>
                     <h4>Customer Service:</h4>
                     <p><a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
                     <h4>Business Sales:</h4>
@@ -478,6 +574,10 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            AOS.init();
+        </script>
 
         <!-- Bootstrap Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

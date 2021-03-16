@@ -65,13 +65,12 @@
 }
 
 .hiring-link {
-    color: white;
+    color: $digital-blue;
     font-family: $ippolito-body;
     font-size: 1rem;
 }
 
 .hiring-link:hover {
-    color: white;
     text-decoration: none;
 }
 
@@ -96,16 +95,23 @@
 }
 
 #alert-section {
-    height: 4px;
+    height: 100px;
     background: $ippolito-green;
 }
 
 .alert-text {
     color: white;
     text-align: center;
-    font-family: $ippolito-heading;
-    font-size: 3rem;
+    font-family: $ippolito-body;
+    font-size: 1.2rem;
     margin: 0 auto;
+}
+
+.announce-icon {
+    border-right: solid 1px white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 16px;
 }
 
 .main-heading {
@@ -151,7 +157,7 @@ hr {
 
 .card {
     height: 300px;
-    border-radius: 15px !important; 
+    border-radius: 0px !important;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(205,205,205,0.50);
     -moz-box-shadow: 0px 0px 20px 0px rgba(205,205,205,0.50);
     box-shadow: 0px 0px 20px 0px rgba(205,205,205,0.50);
@@ -286,5 +292,13 @@ hr {
     @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+    }
+
+    .jvectormap-zoomin {
+        display: none;
+    }
+
+    .jvectormap-zoomout {
+        display: none;
     }
   

@@ -13,3 +13,8 @@ document
       target.className = 'vis';
     }
 });
+
+$(document).ready(function(){
+  $('.toast').toast('show');
+});
+

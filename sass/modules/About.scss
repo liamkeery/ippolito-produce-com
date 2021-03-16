@@ -48,7 +48,7 @@
     line-height: 32px;
     font-weight: 300;
     margin-top: 24px;
-    text-align: center;
+    text-align: left;
 }
 
 #team-con {
@@ -66,6 +66,20 @@
     h1 {
         margin-bottom: 60px;
     }
+}
+
+.about-link:hover {
+    text-decoration: none;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    height: 200px;
+}
+
+.card-title {
+    color: $ippolito-purple;
 }
 
 .image-con {

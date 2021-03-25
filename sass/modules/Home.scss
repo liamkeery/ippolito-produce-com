@@ -15,6 +15,11 @@
     background: $ippolito-purple;
 }
 
+.navbar-collapse {
+    background: $ippolito-purple;
+    z-index: 1;
+}
+
 .nav-item a, .nav-item a:hover {
     color: $white;
     font-family: $ippolito-body;
@@ -57,6 +62,7 @@
     color: white;
     font-size: 5rem;
     margin-left: 32px;
+    float: left;
 }
 
 .hiring {
@@ -76,6 +82,11 @@
 
 .hiring-box {
     background: $ippolito-green;
+    float: right;
+}
+
+.toast {
+    margin-right: 3rem;
     float: right;
 }
 
@@ -179,6 +190,11 @@ hr {
     overflow: visible;
     position: relative;
     margin-bottom: 100px;
+}
+
+#product-select select {
+    text-align-last: center;
+    width: auto;
 }
 
 .product-select-form {

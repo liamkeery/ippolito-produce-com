@@ -2,6 +2,18 @@
 
 // Extra Small
 @media (max-width: 575.98px) {
+    .dropdown-menu {
+        background: $ippolito-purple !important;
+    }
+
+    .dropdown-item {
+        color: white !important;
+    }
+
+    .navbar-collapse {
+        padding: 24px;
+    }
+    
     #top-alert {
         font-size: 12px;
     }
@@ -14,12 +26,19 @@
         font-size: 2.5rem !important;
     }
 
-    .hero-text {
-        font-size: 3rem !important;
+    .alert-text {
+        font-size: 1rem !important;
+        padding: 8px;
     }
 
-    .alert-text {
-        font-size: 2.5rem !important;
+    .toast {
+        display: block;
+        float: none !important;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-bottom: 40px;
     }
 
     .footer-con {
@@ -45,23 +64,23 @@
 
     .logos {
         width: 290px !important;
-        margin-left: 16px;
     }
 
     #hero {
         height: auto;
     }
 
-    .hiring-box {
-        float: none !important;
-        margin-bottom: 16px;
-        width: 280px;
-    }
+    // .hiring-box {
+    //     float: none !important;
+    //     margin-bottom: 16px;
+    //     width: 280px;
+    // }
 
     .hero-text {
         margin-top: 32px;
-        float: none;
+        float: none !important;
         font-size: 2.5rem !important;
+        text-align: center !important;
     }
 
     .navbar-brand {
@@ -71,29 +90,48 @@
     #footer-logo {
         margin-left: 0 !important;
     }
+
+    .assoc-logo {
+        max-width: 200px !important;
+        display: block;
+        margin: 0 auto;
+        padding-top: 32px;
+    }
+
+    .opma {
+        max-width: 150px !important;
+        display: block;
+        margin: 0 auto;
+        padding-top: 16px;
+    }
+
+    .page-heading {
+        font-size: 3.5rem !important;
+        word-wrap: break-word;
+    }
 }
 
 // Menu breakpoint
 @media (max-width: 1200px) {
-    .hiring-box {
-        float: none;
-    }
+    // .hiring-box {
+    //     float: none;
+    // }
 }
 
 // iPad
 @media (max-width: 768px) {
-    .hiring-box {
-        width: 300px;
-    }
+    // .hiring-box {
+    //     width: 300px;
+    // }
 }
 
 // iPad Pro
 @media (max-width: 1024px) {
-    .hiring-box {
-        margin-left: 16px;
-        width: 300px;
-        margin-bottom: 32px;
-    }
+    // .hiring-box {
+    //     margin-left: 16px;
+    //     width: 300px;
+    //     margin-bottom: 32px;
+    // }
 
     #hero {
         height: auto;
@@ -110,10 +148,10 @@
         padding-top: 16px;
     }
 
-    .hiring-box {
-        width: 280px;
-        margin-bottom: 32px;
-    }
+    // .hiring-box {
+    //     width: 280px;
+    //     margin-bottom: 32px;
+    // }
 
     .logos {
         width: 500px;

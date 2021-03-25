@@ -108,7 +108,7 @@
             
             <div class="row">
                 <div class="col">
-                <h1 class="hero-text float-left">Create Your Plate.<sup><span style="font-size: 1.5rem;">&#174;</span></sup></h1>
+                <h1 class="hero-text">Create Your Plate.<sup><span style="font-size: 1.5rem;">&#174;</span></sup></h1>
                 <br>
                 <img src="/images/logos.svg" class="logos img-fluid">
 
@@ -116,7 +116,7 @@
             </div>
 
             <div class="col mt-5">   
-                <div class="toast float-right mr-5" data-autohide="false">
+                <div class="toast" data-autohide="false">
                     <div class="toast-header">
                       <strong class="mr-auto text-primary">Ippolito Careers</strong>
                       <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
@@ -128,7 +128,7 @@
                 <!-- <h3 class="hiring hiring-box p-4 mr-5">Looking for exciting opportunities?<br><a href="http://ippolitogroup.com/careers.php" class="hiring-link hvr-icon-forward ml-1">We're hiring <i class="fas fa-long-arrow-alt-right hvr-icon"></i></a></h3> -->
             </div>
 
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center mt-4">
                 <a href="#alert-section" class="scroll-toggle hvr-hang"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div><!-- End Row -->
@@ -168,7 +168,7 @@
                         <div class="card-back">
                             <h3 class="card-heading">Value Add</h3>
                             <hr class="card-hr">
-                            <p class="card-body">Our facilities in Burlington, Ontario wash, process and pack over 10,000,000 Lbs of leafy greens each year – delivering fresh value to our customer base in Canada and the United States. </p>
+                            <p class="card-body">Our facilities in Burlington, Ontario wash, process and pack over 10,000,000 lbs of leafy greens each year – delivering fresh value to our customer base in Canada and the United States. </p>
                         </div>
                     </div>
                     
@@ -197,7 +197,7 @@
                 <form class="product-select-form col-6">
                     <div class="form-group row justify-content-center">
                         <label for="product-select" class="col-form-label mr-2">I'm looking for</label>
-                        <select class="form-control col-lg-9" id="product-select">
+                        <select class="form-control col-lg-12 col-md-12 col-sm-12" id="product-select">
                             <option>Select...</option>
                             <option value="product-1">Commodities</option>
                             <option value="product-2">Value Add Leafy Greens & Mixes</option>
@@ -312,7 +312,7 @@
                 <hr class="hr-small">
                 <ul class="nav flex-column footer-nav">
                     <li class="nav-item mt-4">
-                        <a class="nav-link" href="about.html">What We Value</a>
+                        <a class="nav-link" href="values.html">What We Value</a>
                     </li>
                     <li class="nav-item mt-3">
                         <a class="nav-link" href="food-safety.html">Food Safety</a>
@@ -416,16 +416,16 @@
     <script>
         $(function () {
 
-            var growingData = {
-                "US-NJ": 'Insert items grown here.',
-                "US-NV": 'Insert items grown here.',
-                "US-TX": 'Insert items grown here.',
-                "US-FL": 'Insert items grown here.',
-                "US-CA": 'Insert items grown here.',
-                "US-AZ": 'Insert items grown here.',
-                "CA-ON": 'Insert items grown here.',
-                "CA-QC": 'Insert items grown here.',
-            }
+            // var growingData = {
+            //     "US-NJ": 'Insert items grown here.',
+            //     "US-NV": 'Insert items grown here.',
+            //     "US-TX": 'Insert items grown here.',
+            //     "US-FL": 'Insert items grown here.',
+            //     "US-CA": 'Insert items grown here.',
+            //     "US-AZ": 'Insert items grown here.',
+            //     "CA-ON": 'Insert items grown here.',
+            //     "CA-QC": 'Insert items grown here.',
+            // }
 
             $('#us-map').vectorMap(
                 {
@@ -469,11 +469,11 @@
                         "US-CA": '#F18A20',
                         "US-AZ": '#F18A20'
                     },
-                    onRegionTipShow: function(e, el, code){
-                        if(code != undefined) {
-                            el.html(el.html()+' (Grown here: - '+growingData[code]+')');
-                        }   
-                    },
+                    // onRegionTipShow: function(e, el, code){
+                    //     if(code != undefined) {
+                    //         el.html(el.html()+' (Grown here: - '+growingData[code]+')');
+                    //     }   
+                    // },
                     zoomOnScroll: false
 
                 });

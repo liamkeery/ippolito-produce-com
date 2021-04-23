@@ -31,7 +31,7 @@
 }
 
 .product-text {
-    text-align: center;
+    text-align: left;
 }
 
 .navbar-brand {
@@ -61,7 +61,6 @@
     font-weight: 700;
     color: white;
     font-size: 5rem;
-    margin-left: 32px;
     float: left;
 }
 
@@ -101,7 +100,6 @@
 
 .logos {
     display: block;
-    margin-left: 32px;
     width: 600px;
 }
 
@@ -113,9 +111,16 @@
 .alert-text {
     color: white;
     text-align: center;
-    font-family: $ippolito-body;
-    font-size: 1.2rem;
+    font-family: $ippolito-heading;
     margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.alert-read-more {
+    font-family: $ippolito-body;
+    font-size: 1rem;
+    margin-left: 8px;
+    color: white;
 }
 
 .announce-icon {
@@ -159,6 +164,7 @@
     color: white;
     font-family: $ippolito-body !important;
     border: none !important;
+    width: 200px;
 }
 
 hr {
@@ -167,7 +173,7 @@ hr {
 }
 
 .card {
-    height: 300px;
+    height: 310px;
     border-radius: 0px !important;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(205,205,205,0.50);
     -moz-box-shadow: 0px 0px 20px 0px rgba(205,205,205,0.50);
@@ -223,6 +229,12 @@ hr {
     background-position: center;
 }
 
+.legend {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
 .card-inner {
     position: relative;
     width: 100%;
@@ -263,8 +275,9 @@ hr {
       font-family: $ippolito-body;
       font-size: 1rem;
       color: $dark-grey;
+      line-height: auto;
       text-align: left;
-      padding: 0;
+      padding: 8px;
   }
 
   .card-hr {
@@ -316,5 +329,44 @@ hr {
 
     .jvectormap-zoomout {
         display: none;
+    }
+
+    #careers {
+        height: 0px;
+        width: 85px;
+        position: fixed;
+        right: 0;
+        top: 30%;
+        z-index: 1000;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    
+    #careers a {
+        display: block;
+        background: $ippolito-purple;
+        height: 52px;
+        width: 155px;	
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-top: 8px;
+    }
+
+    #careers a:hover {
+        text-decoration: underline;
+    }
+
+    .modal-title {
+        font-family: $ippolito-heading;
+        font-size: 1.5rem;
     }
   

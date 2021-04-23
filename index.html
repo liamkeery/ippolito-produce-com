@@ -28,6 +28,31 @@
         </div> -->
 
         <div class="row" id="hero">
+
+            <div id="careers">
+                <a href="#" data-toggle="modal" data-target="#exampleModal">We're Hiring!</a>
+            </div>
+
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Looking for a career?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Check out our available opportunities on our <a href="http://ippolitogroup.com/careers.php">Ippolito Careers</a> page.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
             <nav class="navbar navbar-dark navbar-expand-xl col-lg-12">
                 <a class="navbar-brand" href="index.html">Ippolito Fruit &amp;
                     Produce Ltd.</a>
@@ -41,52 +66,53 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Products &amp; Services
+                            </a>
+                            <div class="dropdown-menu" aria- labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="index.html#services-section">What We Do</a>
+                                <a class="dropdown-item" href="index.html#products-section">Explore The Options</a>
+                                <a class="dropdown-item" href="index.html#sourcing">Where We Source</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="index.html#services-section">What We Do</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#products-section">Explore The Options</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                About Us
-                            </a>
-                            <div class="dropdown-menu" aria- labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="about.html">What We Value</a>
-                                <a class="dropdown-item" href="about.html#food-safety">Food Safety</a>
-                                <a class="dropdown-item" href="about.html#employee-safety">Employee Safety</a>
-                                <a class="dropdown-item" href="#">Sustainability</a>
-                                <a class="dropdown-item" href="about.html#history">Our Story</a>
-                                <a class="dropdown-item" href="about.html#team">Our Leadership Team</a>
-                                <a class="dropdown-item" href="#">Our Community</a>
-                                <a class="dropdown-item" href="about.html#facilities">Our Facilities</a>
-                                <a class="dropdown-item" href="#">Associations/Certifications</a>
-                                
-                            </div>
-                        </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                Create Your Plate
+                                Our Company
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="recipes.html">Recipe Details</a>
-                                <a class="dropdown-item" href="recipes.html">Nutrition Newsletter</a>
+                                <a class="dropdown-item" href="http://ippolitogroup.com/careers.php">Careers</a>
+                                <a class="dropdown-item" href="food-safety.html">Food Safety</a>
+                                <a class="dropdown-item" href="employee-safety.html">Employee Safety</a>
+                                <a class="dropdown-item" href="sustainability.html">Sustainability</a>
+                                <a class="dropdown-item" href="associations.html">Associations/Certifications</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipes.html">Create Your Plate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connect.html">Connect With Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                                 Connect
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <a class="dropdown-item" href="connect.html">Contact Us</a>
                                 <a class="dropdown-item" href="https://www.ippolitogroup.com/careers.php">Careers</a>
-                                <a class="dropdown-item" href="#">Life At Ippolito</a>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="nav justify-content-end" id="social-icons">
                         <li class="nav-item">
@@ -106,16 +132,16 @@
                 </div>
             </nav>
             
-            <div class="row">
+            <div class="col-lg-12">
                 <div class="col">
                 <h1 class="hero-text">Create Your Plate.<sup><span style="font-size: 1.5rem;">&#174;</span></sup></h1>
-                <br>
-                <img src="/images/logos.svg" class="logos img-fluid">
-
+                </div>
+                <div class="col">
+                <img src="/images/logos.svg" class="logos img-fluid float-right mt-2">
             </div>
             </div>
 
-            <div class="col mt-5">   
+            <!-- <div class="col mt-5">   
                 <div class="toast" data-autohide="false">
                     <div class="toast-header">
                       <strong class="mr-auto text-primary">Ippolito Careers</strong>
@@ -124,9 +150,9 @@
                     <div class="toast-body">
                         Looking for exciting opportunities?<br><a href="http://ippolitogroup.com/careers.php" class="hvr-icon-forward">We're hiring <i class="fas fa-long-arrow-alt-right hvr-icon pt-2"></i></a>
                     </div>
-                  </div>  
+                  </div>   -->
                 <!-- <h3 class="hiring hiring-box p-4 mr-5">Looking for exciting opportunities?<br><a href="http://ippolitogroup.com/careers.php" class="hiring-link hvr-icon-forward ml-1">We're hiring <i class="fas fa-long-arrow-alt-right hvr-icon"></i></a></h3> -->
-            </div>
+            <!-- </div> -->
 
             <div class="col-lg-12 text-center mt-4">
                 <a href="#alert-section" class="scroll-toggle hvr-hang"><i class="fas fa-chevron-down"></i></a>
@@ -135,7 +161,7 @@
         
 
         <div class="row align-items-center" id="alert-section">
-            <div class="col"><p class="alert-text"><i class="fas fa-bullhorn pr-3 announce-icon"></i>We welcome Steve Roberts to the Ippolito Fruit & Produce Sales Team!</p>
+            <div class="col"><p class="alert-text"><i class="fas fa-bullhorn pr-3 announce-icon"></i>We welcome Steve Roberts to the Ippolito Fruit & Produce Sales Team! <br><a href="http://theproducenews.com/people/steve-roberts-joins-ippolito-fruit-produce-ltd" class="hvr-icon-forward alert-read-more">Read More <i class="fas fa-long-arrow-alt-right hvr-icon"></i></a></p>
             </div>
         </div>
 
@@ -151,10 +177,10 @@
                 <div class="col-lg-3 card mt-1 text-center" data-aos="fade-down"> 
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="images/brussel.jpg" alt="" class="m-auto pt-4" style="max-width: 250px;">
+                            <img src="images/veggies.png" alt="" class="m-auto" style="max-width: 250px; padding-top: 60px;">
                         </div>
                         <div class="card-back">
-                            <h3 class="card-heading">Commodities</h3>
+                            <h3 class="card-heading pt-3">Commodities</h3>
                             <hr class="card-hr">
                             <p class="card-body">From our growing partners across North America, including our sister company Ippolito International, we source what matters to you. Local when we can, Organic when you want it, but always in season and great value.</p>
                         </div>
@@ -163,12 +189,12 @@
                 <div class="col-lg-3 card mt-1 text-center" data-aos="fade-down">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="images/leaf-2.png" alt="" class="m-auto pt-4" style="max-width: 250px;">
+                            <img src="images/leaf-2.png" alt="" class="m-auto pt-5" style="max-width: 250px;">
                         </div>
                         <div class="card-back">
-                            <h3 class="card-heading">Value Add</h3>
+                            <h3 class="card-heading pt-3">Value Add</h3>
                             <hr class="card-hr">
-                            <p class="card-body">Our facilities in Burlington, Ontario wash, process and pack over 10,000,000 lbs of leafy greens each year – delivering fresh value to our customer base in Canada and the United States. </p>
+                            <p class="card-body">Our facilities in Burlington, Ontario wash, process and pack over 10,000,000 lbs of leafy greens each year. We also dice, chop, and shred certain vegetables. Delivering fresh value to our customer base in Canada and the United States. </p>
                         </div>
                     </div>
                     
@@ -179,9 +205,9 @@
                             <img src="images/clementines.jpg" alt="" class="m-auto pt-5" style="max-width: 180px;">
                         </div>
                         <div class="card-back">
-                            <h3 class="card-heading">Specialty Services</h3>
+                            <h3 class="card-heading pt-3">Specialty Services</h3>
                             <hr class="card-hr">
-                            <p class="card-body">Service is at the heart of everything we do. From inbound quality inspections, to icing services and reclamation, from consolidating loads to regrading and repacking, bagging, ripening, merchandising support and menu development – we are flexible enough to be your extended produce arm.</p>
+                            <p class="card-body">Service is at the heart of everything we do. From inbound quality inspections, to icing services &amp; reclamation, from consolidating loads to regrading &amp; repacking, bagging, ripening, merchandising support &amp; menu development – we are flexible enough to be your extended produce arm.</p>
                         </div>
                     </div>
                 </div>
@@ -200,9 +226,11 @@
                         <select class="form-control col-lg-12 col-md-12 col-sm-12" id="product-select">
                             <option>Select...</option>
                             <option value="product-1">Commodities</option>
-                            <option value="product-2">Value Add Leafy Greens & Mixes</option>
+                            <option value="product-2">Value-Added Produce</option>
                             <option value="product-3">Private Label</option>
-                            <option value="product-4">Services</option>
+                            <option value="product-4">Specialty Services</option>
+                            <option value="product-5">Local Produce</option>
+                            <option value="product-6">Organics</option>
                         </select>
                     </div>
                 </form>
@@ -218,57 +246,88 @@
         <div class="inv" id="product-1">
             <div class="row align-items-center">
             <div class="col-sm-6 d-none d-md-block text-center">
-                <img src="images/organics.png" alt="" class="product-img img-fluid">
+                <img src="images/brussels-with-logo.png" alt="" class="product-img img-fluid">
             </div>
             <div class="col-sm-4 text-center pt-5 pb-2">
                 <h1 class="main-heading-alt mb-3 mt-4">Commodities</h1>
-                <p class="body-copy-alt product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptas vitae repellendus quo doloribus nobis, facilis harum perspiciatis facere ipsam, dolorum praesentium unde at sint et ratione corrupti ad. Consequuntur?</p>
-                <a href="includes/test-doc.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
+                <p class="body-copy-alt product-text">Ippolito Fruit & Produce has been sourcing and selling produce for over 80 years, with grower relationships spanning North America.</p>
+                <a href="includes/product-guide.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
             </div> 
         </div>
         </div> <!-- End Product 1 -->
         <div class="inv" id="product-2">
             <div class="row align-items-center">
             <div class="col-sm-6 d-none d-md-block text-center">
-                <img src="images/product-image-2.png" alt="" class="product-img img-fluid">
+                <img src="images/leafy-greens.png" alt="" class="img-fluid" width="500" height="500">
             </div>
             <div class="col-sm-4 text-center pt-5 pb-2">
-                <h1 class="main-heading-alt mb-3 mt-4">Value Add Leafy Greens & Mixes</h1>
-                <p class="body-copy-alt product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit, ex quod itaque possimus eum praesentium, asperiores sed totam ratione quo iure quasi earum iste aperiam explicabo repellat vel perspiciatis.</p>
-                <a href="includes/test-doc.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
+                <h1 class="main-heading-alt mb-3 mt-4">Value-Added Produce</h1>
+                <p class="body-copy-alt product-text p-2" style="text-align: justify;">At Ippolito Fruit & Produce our in-house processing offers a wide variety of value-add options. 
+                    We process and pack over 12 million pounds of leafy greens annually. We wash and process single leaf items, such as Arugula, Spinach (baby, teen, savoy/curly), Baby Kale and chopped Tuscan Kale, as well as a variety of blends, including 50/50 mix, spring mix and harvest blends.  We can even customize a mix based on your specifications.
+                    We also peel and dice over 300,000 pounds of squash and tubers per year at our Burlington, Ontario facility, which can be packed to suit your needs, 20lb bulk or individual trays ready for retail.
+                    </p>
+                <a href="includes/conventional-salad-guide.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
             </div> 
         </div>
         </div> <!-- End Product 2 -->
         <div class="inv" id="product-3">
             <div class="row align-items-center">
             <div class="col-sm-6 d-none d-md-block text-center">
-                <img src="images/brussel-sprouts.png" alt="" class="product-img img-fluid">
+                <img src="images/private-label.png" alt="" class="product-img img-fluid">
             </div>
             <div class="col-sm-4 pt-5 pb-2 text-center">
                 <h1 class="main-heading-alt mb-3 mt-4">Private Label</h1>
-                <p class="body-copy-alt product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur corporis obcaecati voluptatibus exercitationem repudiandae aperiam labore iusto cupiditate, minus, amet tempora blanditiis consequatur. Perspiciatis laudantium fugit illo ipsam saepe?</p>
-                <a href="includes/test-doc.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
+                <p class="body-copy-alt product-text">We pack for many of the leading private label brands. Contact our sales team to explore the possibilities.</p>
+                <a href="connect.html" class="btn btn-primary download mt-2 mb-4 p-3">Contact Us</a>
             </div> 
         </div>
         </div> <!-- End Product 3 -->
         <div class="inv" id="product-4">
             <div class="row align-items-center">
             <div class="col-sm-6 d-none d-md-block text-center">
-                <img src="images/leaf-2.png" alt="" class="product-img img-fluid">
+                <img src="images/broccoli.png" alt="" class="product-img img-fluid">
+                <img src="images/oranges-bagged.png" alt="" class="product-img img-fluid">
             </div>
             <div class="col-sm-4 pt-5 pb-2 text-center">
                 <h1 class="main-heading-alt mb-3 mt-4">Services</h1>
-                <p class="body-copy-alt product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas itaque perspiciatis, cumque enim dignissimos natus. Quo, asperiores debitis dolores maiores error, ipsa placeat necessitatibus sunt amet corporis qui alias?</p>
-                <a href="includes/test-doc.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
+                <p class="body-copy-alt product-text">At Ippolito, we understand how complex and volatile the produce industry can be. Ippolito provides a wide array of specialized services to help execute programs efficiently and profitably.  
+                </p>
+                <a href="includes/specialty-services.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
             </div> 
         </div>
         </div> <!-- End Product 4 -->
+        <div class="inv" id="product-5">
+            <div class="row align-items-center">
+            <div class="col-sm-6 d-none d-md-block text-center">
+                <img src="images/cauliflower.png" alt="" class="product-img img-fluid">
+                <img src="images/ontario-qc.png" alt="" class="product-img img-fluid">
+            </div>
+            <div class="col-sm-4 pt-5 pb-2 text-center">
+                <h1 class="main-heading-alt mb-3 mt-4">Local Produce</h1>
+                <p class="body-copy-alt product-text">Serving Eastern Canada and the North Eastern US, Ippolito Fruit and produce is proud to offer local, seasonally available product to our customers.</p>
+                <a href="includes/product-guide.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
+            </div> 
+        </div>
+        </div> <!-- End Product 5 -->
+        <div class="inv" id="product-6">
+            <div class="row align-items-center">
+            <div class="col-sm-6 d-none d-md-block text-center">
+                <img src="images/organics.png" alt="" class="product-img img-fluid">
+            </div>
+            <div class="col-sm-4 pt-5 pb-2 text-center">
+                <h1 class="main-heading-alt mb-3 mt-4">Organics</h1>
+                <p class="body-copy-alt product-text p-2" style="text-align: justify;">Caring how & where your food is produced is important to you. At Ippolito Fruit & Produce we are proud to offer our certified organic line of products under our Lovin’ Life and Queen Victoria Organic brands featuring Arugula, Baby Spinach, Kale, Spring Mix, 50/50 blends and more.<br><br>Our supply chain team sources leafy greens from across North America that will meet our strict organic growing standards, and our Sister company Ippolito International has been growing Certified Organic Commodities like Asparagus, Broccoli, Celery, Cilantro and now Brussel Sprouts adding more options every year.</p>
+                <a href="includes/organic-salad-guide.pdf" target="_blank" class="btn btn-primary download mt-2 mb-4 p-3">Open Product Guide</a>
+            </div> 
+        </div>
+        </div> <!-- End Product 6 -->
     </div>
     <!-- End row -->
     <div class="col-lg-12" id="sourcing">
         <h1 class="main-heading mt-4">Where We Source</h1>
         <hr>
-        <p style="font-size: 0.5rem; text-align: center; margin: 0 auto;"><b>*</b>Not pictured below: Mexico</p>
+        <p style="font-size: 0.5rem; text-align: center; margin: 0 auto;" class="mb-4"><b>*</b>Not pictured below: Mexico</p>
+        <img src="images/source-legend.png" class="img-fluid legend" alt="Map Legend">
         <div class="row">
         <div id="us-map" style="min-width: 300px; height: 300px" class="col-lg-6 mt-4 mb-4" data-aos="zoom-in"></div>
         <div id="canada-map" style="min-width: 300px; height: 300px" class="col-lg-6 mt-4 mb-4" data-aos="zoom-in"></div>
@@ -280,13 +339,13 @@
         <div class="row align-items-center">
             <div class="col p-5">
                 <h1 class="main-heading-alt">Have a question? <b>Reach out!</b></h1>
-                <a class="contact-btn btn btn-primary mt-2 mb-4 p-3 hvr-grow" href="#">Contact Us</a>
+                <a class="contact-btn btn btn-primary mt-2 mb-4 p-3 hvr-grow" href="connect.html">Contact Us</a>
             </div>
         </div>
     </div>
 
     <footer class="col-lg-12 footer-con">
-        <div class="row">
+        <div class="row mb-4">
             <div class="col-sm mt-4 ml-5" id="footer-logo">
                 <h1 class="footer-logo">Ippolito</h1>
                 <h3 class="footer-logo-text">Fruit &amp; Produce Ltd.</h3>
@@ -305,6 +364,9 @@
                     <li class="nav-item mt-3">
                         <a class="nav-link" href="index.html#sourcing">Where We Source</a>
                     </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="recipes.html">Create Your Plate</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm mt-4">
@@ -312,7 +374,28 @@
                 <hr class="hr-small">
                 <ul class="nav flex-column footer-nav">
                     <li class="nav-item mt-4">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item mt-3">
                         <a class="nav-link" href="values.html">What We Value</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="story.html">Our Story</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="about.html#team">Meet Our Team</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="community.html">Our Community</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm mt-4">
+                <h3>Our Company</h3>
+                <hr class="hr-small">
+                <ul class="nav flex-column footer-nav">
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="http://ippolitogroup.com/careers.php">Careers</a>
                     </li>
                     <li class="nav-item mt-3">
                         <a class="nav-link" href="food-safety.html">Food Safety</a>
@@ -323,36 +406,20 @@
                     <li class="nav-item mt-3">
                         <a class="nav-link" href="sustainability.html">Sustainability</a>
                     </li>
-                    <li class="nav-item mt-3">
-                        <a class="nav-link" href="story.html">Our Story</a>
-                    </li>
-                    <li class="nav-item mt-3">
-                        <a class="nav-link" href="about.html#team">Our Leadership Team</a>
-                    </li>
-                    <li class="nav-item mt-3">
-                        <a class="nav-link" href="community.html">Our Community</a>
-                    </li>
                     <li class="nav-item mt-3 mb-4">
                         <a class="nav-link" href="associations.html">Associations/Certifications</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm mt-4">
-                <h3>Explore The Options</h3>
-                <hr class="hr-small">
-                <ul class="nav flex-column footer-nav">
-                    <li class="nav-item mt-3">
-                        <a class="nav-link" href="recipes.html">Create Your Plate</a>
-                    </li>
-                    <li class="nav-item mt-3">
-                        <a class="nav-link" href="#">Nutrition Newsletter</a>
                     </li>
                 </ul>
             </div>
             <div class="col-sm mt-4" id="contact-info">
                 <h3>Contact Us</h3>
                 <hr class="hr-small">
-                <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a></p>
+                <ul class="nav flex-column footer-nav mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="connect.html">Connect With Us</a>
+                    </li>
+                </ul>
+                <p class="mt-3"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a></p>
                 <h4>Customer Service:</h4>
                 <p><a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
                 <h4>Business Sales:</h4>
@@ -517,9 +584,9 @@
                         "CA-QC": '#F18A20'
                     },
                     zoomOnScroll: false,
-                    onRegionTipShow: function(e, el, code){        
-                        el.html(el.html()+' (Grown here: - '+growingData[code]+')');
-                    }
+                    // onRegionTipShow: function(e, el, code){        
+                    //     el.html(el.html()+growingData[code]);
+                    // }
 
                 });
         });

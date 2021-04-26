@@ -112,10 +112,10 @@
 }
 
 // Menu breakpoint
-@media (max-width: 1200px) {
-    // .hiring-box {
-    //     float: none;
-    // }
+@media (max-width: 1920px) {
+    .card {
+        height: 350px;
+    }
 }
 
 // iPad

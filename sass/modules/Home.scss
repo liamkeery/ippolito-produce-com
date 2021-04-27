@@ -101,10 +101,11 @@
 .logos {
     display: block;
     width: 600px;
+    margin-right: 24px;
 }
 
 #alert-section {
-    height: 100px;
+    height: 130px;
     background: $ippolito-green;
 }
 
@@ -286,6 +287,16 @@ hr {
     margin: 0 auto;
     padding: 0;
   }
+
+  .alert-btn {
+    background: white !important;
+    border-radius: 40px !important;
+    color: $dark-grey !important;
+    padding: 12px !important;
+    width: 150px;
+    font-family: $ippolito-body !important;
+    border: none !important;
+}
 
   .inv {
       display: none;

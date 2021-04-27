@@ -60,6 +60,7 @@
 
     #social-icons {
         justify-content: center !important;
+        margin-top: 8px
     }
 
     .logos {
@@ -108,6 +109,26 @@
     .page-heading {
         font-size: 3.5rem !important;
         word-wrap: break-word;
+    }
+
+    .footer-nav {
+        .nav-item {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        flex-direction: column !important;
+    }
+
+    .hvr-underline-from-left:before {
+        background: transparent !important;
+    }
+
+    .queen-vic-footer {
+        float: none !important;
+        margin: 0 auto !important;
+        padding-bottom: 32px;
+        padding-top: 32px;
     }
 }
 

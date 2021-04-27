@@ -51,12 +51,34 @@ h3 {
         color: $dark-grey;
         margin: 0;
         padding: 0;
+        font-family: $ippolito-heading;
+        font-size: 1.8rem;
     }
 
     .nav-item a:hover {
         color: $dark-grey;
-        text-decoration: underline;
+        text-decoration: none;
     }
+
+    .nav-item {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    justify-content: center;
+}
+
+.queen-vic-footer {
+    margin-right: 40px;
+    float: right;
+}
+
+.hvr-underline-from-left:before {
+    background: $ippolito-green !important;
+}
+
+.hvr-underline-from-left {
+    overflow: visible !important;
 }
 
 #contact-info {

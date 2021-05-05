@@ -31,45 +31,38 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link hvr-underline-from-left" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle hvr-underline-from-left" href="about.html" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products &amp; Services
+                                </a>
+                                <div class="dropdown-menu" aria- labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.html#services-section">What We Do</a>
+                                    <a class="dropdown-item" href="index.html#products-section">Explore The Options</a>
+                                    <a class="dropdown-item" href="index.html#sourcing">Where We Source</a>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="index.html#services-section">What We Do</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html#products-section">Explore The Options</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Us</a>
+                                <a class="nav-link hvr-underline-from-left" href="recipes.html">Create Your Plate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" href="connect.html">Connect</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" href="http://ippolitogroup.com/careers.php">Careers</a>
                             </li>
                             <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    About Us
-                                </a>
-                                <div class="dropdown-menu" aria- labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="about.html">What We Value</a>
-                                    <a class="dropdown-item" href="about.html#food-safety">Food Safety</a>
-                                    <a class="dropdown-item" href="about.html#employee-safety">Employee Safety</a>
-                                    <a class="dropdown-item" href="#">Sustainability</a>
-                                    <a class="dropdown-item" href="about.html#history">Our Story</a>
-                                    <a class="dropdown-item" href="about.html#team">Our Leadership Team</a>
-                                    <a class="dropdown-item" href="#">Our Community</a>
-                                    <a class="dropdown-item" href="about.html#facilities">Our Facilities</a>
-                                    <a class="dropdown-item" href="#">Associations/Certifications</a>
-                                    
-                                </div>
-                            </li> -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                    Create Your Plate
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="recipes.html">Recipe Details</a>
-                                    <a class="dropdown-item" href="recipes.html">Nutrition Newsletter</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                                     Connect
                                 </a>
@@ -77,7 +70,7 @@
                                     <a class="dropdown-item" href="connect.html">Contact Us</a>
                                     <a class="dropdown-item" href="https://www.ippolitogroup.com/careers.php">Careers</a>
                                 </div>
-                            </li>
+                            </li> -->
                         </ul>
                         <ul class="nav justify-content-end" id="social-icons">
                             <li class="nav-item">
@@ -102,14 +95,18 @@
             </div><!-- Hero end -->
 
 
-            <h1 class="main-heading" style="margin-bottom: 32px;">Featured Picks</h1>
+            <h1 class="main-heading" style="margin-bottom: 32px;">Featured
+                Recipes</h1>
             <div class="row recipes-row">
                 <div class="col-lg-4 hvr-grow">
                     <a data-toggle="modal"
-                        data-target=".bd-example-modal-lg" style="cursor: pointer;">
+                        data-target="#recipe1" style="cursor: pointer;">
                         <div class="recipe-card">
                             <h3>Smashed Brussel Sprouts</h3>
-                            <p>When it comes to side dishes, smashed potatoes are good. But you know what's even better—and buzzier, according to TikTok users across the globe? Smashed Brussels sprouts.</p>
+                            <p>When it comes to side dishes, smashed potatoes
+                                are good. But you know what's even better—and
+                                buzzier, according to TikTok users across the
+                                globe? Smashed Brussels sprouts.</p>
                             <span class="float-left mr-4">
                                 <b>25 mins</b>
                             </span>
@@ -122,6 +119,30 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-lg-4 hvr-grow">
+                    <a data-toggle="modal"
+                        data-target="#recipe2" style="cursor: pointer;">
+                        <div class="recipe-card">
+                            <h3>Garlic Sauteed Spinach</h3>
+                            <p>Easy, delicious garlic sauteed spinach to make
+                                the perfect side dish for your meal. All the
+                                green flavor you love with tasty garlicky
+                                goodness.</p>
+                            <div class="d-flex align-items-end">
+                                <span class="float-left mr-4">
+                                    <b>10 mins</b>
+                                </span>
+                                <span class="float-left mr-4">
+                                    <b>6 servings</b>
+                                </span>
+                                <span class="float-left">
+                                    <b>Easy</b>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="row recipes-row">
                 <div class="col-lg-4">
                     <div class="recipe-card">
                         <h3>Recipe Title</h3>
@@ -139,8 +160,6 @@
                         </span>
                     </div>
                 </div>
-            </div>
-            <div class="row recipes-row">
                 <div class="col-lg-4">
                     <div class="recipe-card">
                         <h3>Recipe Title</h3>
@@ -158,54 +177,77 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="recipe-card">
-                        <h3>Recipe Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Iure sequi dolorem velit aliquid quibusdam
-                            voluptatem asperiores numquam, est modi.</p>
-                        <span class="float-left mr-4">
-                            Prep Time
-                        </span>
-                        <span class="float-left mr-4">
-                            Serves
-                        </span>
-                        <span class="float-left">
-                            Skill Level
-                        </span>
-                    </div>
-                </div>
-            </div>
+            </div> -->
+                <!-- Recipe modal -->
+                <div class="modal fade" tabindex="-1"
+                    role="dialog" aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true" id="recipe1">
 
-            <!-- Recipe modal -->
-            <div class="modal fade bd-example-modal-lg" tabindex="-1"
-                role="dialog" aria-labelledby="myLargeModalLabel"
-                aria-hidden="true">
-                
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-lg modal-dialog-centered"
+                        role="document">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Smashed Brussel Sprouts</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.eatingwell.com/article/7897061/smashed-brussels-sprouts-are-the-newest-tiktok-trend-we-love/"></iframe>
-                              </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            
-                          </div>
-                </div>
-            </div>
-        </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Smashed Brussel Sprouts</h5>
+                                <button type="button" class="close"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="embed-responsive
+                                    embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.eatingwell.com/article/7897061/smashed-brussels-sprouts-are-the-newest-tiktok-trend-we-love/"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-dismiss="modal">Close</button>
 
-        <h1 class="main-heading" style="margin-bottom: 32px; margin-top: 60px;">Nutritional Information</h1>
-        <div class="row">
-            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" tabindex="-1"
+                    role="dialog" aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true" id="recipe2">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered"
+                        role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Garlic Sauteed Spinach</h5>
+                                <button type="button" class="close"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="embed-responsive
+                                    embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.allrecipes.com/recipe/218288/garlic-spinach/"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div><!-- Container end -->
+
+
+            <h1 class="main-heading" style="margin-bottom: 32px; margin-top:
+                60px;">Nutritional Information</h1>
+            <div class="row">
+
                 <!-- <div class="block-container col-lg-8 m-auto">
                     <div class="col-lg-6 text-box text-center">
                         <h2 class="main-heading-alt">Nutrition Newsletter</h2>
@@ -219,20 +261,27 @@
                     <div class="col-lg-6">
                     </div>
                 </div> -->
-
                 <div class="col-sm-3 m-auto">
-                    <div class="card p-0" style="height: auto;" data-aos="zoom-in">
+                    <div class="card p-0" style="height: auto;"
+                        data-aos="zoom-in">
                         <img class="card-img-top" src="/images/leaf-2.png"
                             alt="Health Benefits of Spinach">
                         <div class="card-body">
-                            <h5 class="card-title">Health Benefits of Spinach</h5>
-                            <p class="card-text">Popeye was on to something. But don't worry—you can get your spinach in other ways. Here are 5-plus reasons to add spinach to your diet.</p>
-                                <div class="card-footer mt-auto">
-                                    <a href="https://www.eatingwell.com/article/7669302/health-benefits-of-spinach/" class="about-link
-                                        hvr-icon-forward card-link">Read
-                                        More <i class="fas fa-long-arrow-alt-right
-                                            hvr-icon pt-2"></i></a>
-                                        </div>
+                            <h5 class="card-title">Health Benefits of
+                                Spinach</h5>
+                            <p class="card-text">Popeye was on to something.
+                                But don't worry—you can get your spinach in
+                                other ways. Here are 5-plus reasons to add
+                                spinach to your diet.</p>
+                            <div class="card-footer mt-auto">
+                                <a
+                                    href="https://www.eatingwell.com/article/7669302/health-benefits-of-spinach/"
+                                    class="about-link
+                                    hvr-icon-forward card-link">Read
+                                    More <i class="fas
+                                        fa-long-arrow-alt-right
+                                        hvr-icon pt-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,13 +300,45 @@
         </div>
 
         <footer class="col-lg-12 footer-con">
-            <div class="row">
-                <div class="col-sm mt-4 ml-5">
+            <div class="row align-items-center">
+                <div class="col-sm mt-4 ml-5" id="footer-logo">
                     <h1 class="footer-logo">Ippolito</h1>
                     <h3 class="footer-logo-text">Fruit &amp; Produce Ltd.</h3>
                     <p>201 North Service Rd.<br>Burlington, ON, Canada<br>L7P 5C4</p>
                 </div>
-                <div class="col-sm mt-4">
+                <div class="col-sm-8">
+                    <ul class="nav footer-nav m-auto">
+                        <li class="nav-item">
+                          <a class="nav-link hvr-underline-from-left" href="index.html#products-section">Products &amp; Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hvr-underline-from-left" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hvr-underline-from-left" href="recipes.html">Create Your Plate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-left" href="connect.html">Connect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-left" href="http://ippolitogroup.com/careers.php">Careers</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col">
+                    <img src="images/queen-victoria-logo.png" alt="Queen Victoria Produce" class="img-fluid queen-vic-footer" width="80" height="80">
+                  </div>
+                  <!-- <div class="col-sm mt-4" id="contact-info">
+                    <h3>Contact Us</h3>
+                    <hr class="hr-small">
+                    <p class="mt-3"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a></p>
+                    <h4>Customer Service:</h4>
+                    <p><a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
+                    <h4>Business Sales:</h4>
+                    <p><a href="mailto:SalesTeam@ippolito.biz">SalesTeam@ippolito.biz</a></p>
+                </div> -->
+                
+                <!-- <div class="col-sm mt-4">
                     <h3>Products &amp; Services</h3>
                     <hr class="hr-small">
                     <ul class="nav flex-column footer-nav">
@@ -265,10 +346,13 @@
                             <a class="nav-link" href="index.html#services-section">What We Do</a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link" href="index.html#products-section">Products & Services</a>
+                            <a class="nav-link" href="index.html#products-section">Explore The Options</a>
                         </li>
                         <li class="nav-item mt-3">
                             <a class="nav-link" href="index.html#sourcing">Where We Source</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link" href="recipes.html">Create Your Plate</a>
                         </li>
                     </ul>
                 </div>
@@ -277,7 +361,28 @@
                     <hr class="hr-small">
                     <ul class="nav flex-column footer-nav">
                         <li class="nav-item mt-4">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mt-3">
                             <a class="nav-link" href="values.html">What We Value</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link" href="story.html">Our Story</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link" href="about.html#team">Meet Our Team</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link" href="community.html">Our Community</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm mt-4">
+                    <h3>Our Company</h3>
+                    <hr class="hr-small">
+                    <ul class="nav flex-column footer-nav">
+                        <li class="nav-item mt-3">
+                            <a class="nav-link" href="http://ippolitogroup.com/careers.php">Careers</a>
                         </li>
                         <li class="nav-item mt-3">
                             <a class="nav-link" href="food-safety.html">Food Safety</a>
@@ -288,67 +393,61 @@
                         <li class="nav-item mt-3">
                             <a class="nav-link" href="sustainability.html">Sustainability</a>
                         </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="story.html">Our Story</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="about.html#team">Our Leadership Team</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="community.html">Our Community</a>
-                        </li>
                         <li class="nav-item mt-3 mb-4">
                             <a class="nav-link" href="associations.html">Associations/Certifications</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm mt-4">
-                    <h3>Explore The Options</h3>
-                    <hr class="hr-small">
-                    <ul class="nav flex-column footer-nav">
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="recipes.html">Create Your Plate</a>
-                        </li>
-                        <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">Nutrition Newsletter</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm mt-4" id="contact-info">
                     <h3>Contact Us</h3>
                     <hr class="hr-small">
-                    <p class="mt-4"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a></p>
+                    <ul class="nav flex-column footer-nav mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="connect.html">Connect With Us</a>
+                        </li>
+                    </ul>
+                    <p class="mt-3"><b>Tel:</b> <a href="tel:9056317700">(905) 631-7700</a></p>
                     <h4>Customer Service:</h4>
                     <p><a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
                     <h4>Business Sales:</h4>
                     <p><a href="mailto:SalesTeam@ippolito.biz">SalesTeam@ippolito.biz</a></p>
                 </div>
-            </div>
+            </div> -->
         </footer>
-    
+
         <div class="col-lg-12 footer-sec pt-3 pb-3">
             <div class="row align-items-center">
                 <div class="col-sm">
-                    <p>Copyright &copy; 2021 Ippolito Fruit &amp; Produce Ltd.</p>
+                    <p>Copyright &copy; 2021 Ippolito Fruit &amp; Produce
+                        Ltd.</p>
                 </div>
                 <div class="col-sm text-center">
                     <a href="privacy.html" class="mr-2">Privacy Policy</a>
                     |
-                    <a href="http://ippolitogroup.com" class="ml-2">The Ippolito Group</a>
+                    <a href="http://ippolitogroup.com" class="ml-2">The
+                        Ippolito Group</a>
                 </div>
                 <div class="col-sm">
                     <ul class="nav justify-content-end" id="social-icons">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/company/ippolitogroup/"><i class="fab fa-linkedin"></i></a>
+                            <a class="nav-link"
+                                href="https://www.linkedin.com/company/ippolitogroup/"><i
+                                    class="fab fa-linkedin"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/theippolitogroup/"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link"
+                                href="https://www.instagram.com/theippolitogroup/"><i
+                                    class="fab fa-instagram"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/IppolitoGroup"><i class="fab fa-facebook-square"></i></a>
+                            <a class="nav-link"
+                                href="https://www.facebook.com/IppolitoGroup"><i
+                                    class="fab fa-facebook-square"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://twitter.com/IppolitoGroup"><i class="fab fa-twitter-square"></i></a>
+                            <a class="nav-link"
+                                href="https://twitter.com/IppolitoGroup"><i
+                                    class="fab fa-twitter-square"></i></a>
                         </li>
                     </ul>
                 </div>

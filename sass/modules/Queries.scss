@@ -4,6 +4,7 @@
 @media (max-width: 575.98px) {
     .dropdown-menu {
         background: $ippolito-purple !important;
+        border: none !important;
     }
 
     .dropdown-item {
@@ -129,6 +130,18 @@
         margin: 0 auto !important;
         padding-bottom: 32px;
         padding-top: 32px;
+    }
+
+    .sm-no-padding {
+        padding-top: 0 !important;
+    }
+
+    .about-row {
+        padding-top: 0 !important;
+    }
+
+    .sm-card {
+        padding-bottom: 60px;
     }
 }
 

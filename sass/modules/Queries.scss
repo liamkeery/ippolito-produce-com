@@ -28,8 +28,12 @@
     }
 
     .alert-text {
-        font-size: 1rem !important;
+        font-size: 1.2rem !important;
         padding: 8px;
+    }
+
+    .alert-btn {
+        padding: 8px !important;
     }
 
     .toast {
@@ -66,6 +70,8 @@
 
     .logos {
         width: 290px !important;
+        margin: 0 auto !important;
+        float: none !important;
     }
 
     #hero {

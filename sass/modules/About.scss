@@ -116,3 +116,14 @@
         font-family: $ippolito-body;
     }
 }
+
+.community-tagline {
+    font-family: $ippolito-heading;
+    color: $ippolito-green;
+}
+
+.ffl {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    display: block;
+}

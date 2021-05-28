@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ippolito Fruit &amp; Produce - Recipes</title>
+        <link rel="shortcut icon" href="/images/favicon.ico">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/hover.css">
         <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,6 +18,8 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/5a7dc109cc.js"
             crossorigin="anonymous"></script>
+        <!-- Animate on Scroll -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -94,11 +98,66 @@
                 </div>
             </div><!-- Hero end -->
 
+            <div class="row mb-5">
+                <div class="col-lg-6 pl-5" data-aos="fade-right">
+                    <p class="create-text">Our Queen Victoria line of fresh salads and value-added vegetables has also taken on a fresh new look with an eye-catching, high-graphic design promoting our new <b><span class="create-campaign">Create Your Plate!</span></b> consumer marketing campaign.</p>
+                    
+                    <img src="images/half-your-plate.jpeg" alt="Half Your Plate" class="img-fluid half-plate">
+                    <p class="text-center">Complimenting the Canadian Produce Marketing Association.</p>
+                    
+                </div>
+                <div class="col-lg-6 pr-5" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_blender.svg" alt="Blender">
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <a data-toggle="modal"
+                        data-target="#recipe1" style="cursor: pointer;"><img src="images/QV-icons_fryingpan.svg" alt="Frying Pan" class="hvr-grow"></a>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_steam.svg" alt="Pot with Steam">
+                        </div>
+                    
+                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                        <div class="w-100 d-none d-md-block"></div>
+                    
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_sandwich.svg" alt="Sandwich">
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_soup.svg" alt="Soup">
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_salad.svg" alt="Salad">
+                        </div>
+
+                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                        <div class="w-100 d-none d-md-block"></div>
+
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_bbq.svg" alt="BBQ">
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <a data-toggle="modal"
+                        data-target="#recipe2" style="cursor: pointer;">
+                            <img src="images/QV-icons_oven.svg" alt="Oven" class="hvr-grow">
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <img src="images/QV-icons_microwave.svg" alt="QV-icons_microwave">
+                        </div>
+
+                      </div>
+                </div>
+            </div>
+
 
             <h1 class="main-heading" style="margin-bottom: 32px;">Featured
                 Recipes</h1>
             <div class="row recipes-row">
-                <div class="col-lg-4 hvr-grow">
+                <div class="col-lg-4 hvr-grow" id="brussel">
+                    <img src="images/QV-icons_oven.svg" style="width: 50px; padding-bottom: 8px;">
                     <a data-toggle="modal"
                         data-target="#recipe1" style="cursor: pointer;">
                         <div class="recipe-card">
@@ -107,19 +166,21 @@
                                 are good. But you know what's even better—and
                                 buzzier, according to TikTok users across the
                                 globe? Smashed Brussels sprouts.</p>
+                        
                             <span class="float-left mr-4">
                                 <b>25 mins</b>
                             </span>
                             <span class="float-left mr-4">
                                 <b>Serves 2-4</b>
                             </span>
-                            <span class="float-left">
+                            <span class="float-left mr-4">
                                 <b>Easy</b>
                             </span>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 hvr-grow">
+                <div class="col-lg-4 hvr-grow" id="spinach">
+                    <img src="images/QV-icons_fryingpan.svg" style="width: 50px; padding-bottom: 8px;">
                     <a data-toggle="modal"
                         data-target="#recipe2" style="cursor: pointer;">
                         <div class="recipe-card">
@@ -129,15 +190,15 @@
                                 green flavor you love with tasty garlicky
                                 goodness.</p>
                             <div class="d-flex align-items-end">
-                                <span class="float-left mr-4">
+                                <div class="float-left mr-4">
                                     <b>10 mins</b>
-                                </span>
-                                <span class="float-left mr-4">
+                                </div>
+                                <div class="float-left mr-4">
                                     <b>6 servings</b>
-                                </span>
-                                <span class="float-left">
+                                </div>
+                                <div class="float-left">
                                     <b>Easy</b>
-                                </span>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -277,7 +338,7 @@
                                 <a
                                     href="https://www.eatingwell.com/article/7669302/health-benefits-of-spinach/"
                                     class="about-link
-                                    hvr-icon-forward card-link">Read
+                                    hvr-icon-forward card-link" target="_blank">Read
                                     More <i class="fas
                                         fa-long-arrow-alt-right
                                         hvr-icon pt-2"></i></a>
@@ -453,6 +514,10 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            AOS.init();
+        </script>
 
         <!-- Bootstrap Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

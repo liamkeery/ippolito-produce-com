@@ -160,9 +160,31 @@
 
 // iPad
 @media (max-width: 768px) {
-    // .hiring-box {
-    //     width: 300px;
-    // }
+    .dropdown-menu {
+        background: $ippolito-purple !important;
+        border: none !important;
+    }
+
+    .dropdown-item {
+        color: white !important;
+    }
+
+    .hvr-underline-from-left:before {
+        background: transparent !important;
+    }
+
+    .navbar-nav {
+        padding-left: 24px !important;
+    }
+
+    #social-icons {
+        justify-content: center !important;
+    }
+
+    .choose-img {
+        position: unset;
+    }
+
 }
 
 // iPad Pro

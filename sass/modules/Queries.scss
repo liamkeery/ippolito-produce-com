@@ -44,6 +44,7 @@
 
     .card {
         margin-bottom: 40px;
+        height: 350px !important;
     }
 
     .footer-con {
@@ -215,8 +216,9 @@
         }
     }
 
-
-
+    .card {
+        height: 300px !important;
+    }
 }
 
 // iPad Pro
@@ -229,6 +231,10 @@
 
     #hero {
         height: auto;
+    }
+
+    .card {
+        height: 450px;
     }
 }
 
